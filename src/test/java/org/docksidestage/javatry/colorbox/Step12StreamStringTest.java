@@ -55,6 +55,12 @@ public class Step12StreamStringTest extends PlainTestCase {
      * (カラーボックスに入ってる文字列の中で、一番長い文字列は？)
      */
     public void test_length_findMax() {
+//        List<ColorBox> colorBoxList = new YourPrivateRoom().getColorBoxList();
+//        colorBoxList.stream().flatMap(box -> box.getSpaceList().stream())
+//            .map(space -> space.getContent())
+//            .filter(content -> content instanceof String)
+//            .map(content -> ((String) content).length())
+//            .max(comparator);
     }
 
     /**
