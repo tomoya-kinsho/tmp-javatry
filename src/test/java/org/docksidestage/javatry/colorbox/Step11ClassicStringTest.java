@@ -18,6 +18,8 @@ package org.docksidestage.javatry.colorbox;
 import java.awt.*;
 import java.util.List;
 
+import javax.swing.*;
+
 import org.docksidestage.bizfw.colorbox.ColorBox;
 import org.docksidestage.bizfw.colorbox.color.BoxColor;
 import org.docksidestage.bizfw.colorbox.space.BoxSpace;
@@ -152,6 +154,15 @@ public class Step11ClassicStringTest extends PlainTestCase {
      * (カラーボックスの中で、色の名前が一番長いものは？)
      */
     public void test_length_findMaxColorSize() {
+        List<ColorBox> colorBoxList = new YourPrivateRoom().getColorBoxList();
+        String maxLengthColor;
+        for (ColorBox colorBox : colorBoxList) {
+            Object boxColor = colorBox.getColor();
+//            log(boxColor.toString());
+            if (boxColor.toString() instanceof String) {
+                log(boxColor);
+            }
+        }
     }
 
     // ===================================================================================
